@@ -133,7 +133,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Our proposed whole-body constrained learning framework enables agile locomotion over a wide range of challenging terrains while introducing constraints via hierarchical optimization.
       </h2>
     </div>
   </div>
@@ -163,13 +163,12 @@
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
+          <h2 class="title is-3">Video</h2>
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/<need>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -178,41 +177,20 @@
 </section>
 <!-- End youtube video -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Outdoor experiments</h2>
+        <div class="content has-text-justified">
+          <p>
+            Smooth ice surfaces and soft snow present highly challenging terrains, where walking can easily become hazardous. To verify the adaptability of our method to complex terrains and assess the safety improvements with introduced constraints, we conducted experiments using the Elspider-Air robot across a campus covered in snow and ice. The experiment encompassed various terrains including icy grassy areas, stairs, slopes, and obstacles.
+          </p>
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- End video carousel -->
 
-<section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
 
@@ -223,7 +201,7 @@
             Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
             would be impossible without nerfies since it would require going through a wall.
           </p> -->
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+          <video id="ice" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/ice.mp4"
                     type="video/mp4">
           </video>
@@ -238,7 +216,7 @@
               As a byproduct of our method, we can also solve the matting problem by ignoring
               samples that fall outside of a bounding box during rendering.
             </p> -->
-            <video id="matting-video" controls playsinline height="100%">
+            <video id="slope" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/slope.mp4"
                       type="video/mp4">
             </video>
@@ -259,7 +237,7 @@
               As a byproduct of our method, we can also solve the matting problem by ignoring
               samples that fall outside of a bounding box during rendering.
             </p> -->
-            <video id="matting-video" controls playsinline height="100%">
+            <video id="soil" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/soil.mp4"
                       type="video/mp4">
             </video>
@@ -275,7 +253,7 @@
               As a byproduct of our method, we can also solve the matting problem by ignoring
               samples that fall outside of a bounding box during rendering.
             </p> -->
-            <video id="matting-video" controls playsinline height="100%">
+            <video id="pipeline" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/pipeline.mp4"
                       type="video/mp4">
             </video>
@@ -286,21 +264,88 @@
   </div>
 </section>
 
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Ablation studies</h2>
+        <div class="content has-text-justified">
+          <p>
+            To further investigate our proposed whole-body constrained learning framework, we conducted an ablation study using identical RL policies and the same velocity commands. The tracking performance was evaluated by comparing two approaches: the classical end-to-end RL with a PD follower and our method that incorporates constraints within a whole-body follower. We conducted ablation studies to evaluate the effectiveness of our approach.
+          </p>
+        </div>
       </div>
     </div>
-  </section> -->
-<!--End paper poster -->
+  </div>
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-4">PD follower</h2>
+          <!-- <p>
+            PD
+          </p> -->
+          <video id="pd" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/pd.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="column">
+        <h2 class="title is-4">WBC follower</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <!-- <p>
+                WBC
+            </p> -->
+            <video id="wbc" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/wbc.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+
+      <div class="column">
+        <h2 class="title is-4">F-T interaction constraints</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <!-- <p>
+                We
+            </p> -->
+            <video id="com_mu" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/com_mu.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <h2 class="title is-4">Kinematic constraints</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <!-- <p>
+              We
+            </p> -->
+            <video id="com_pos" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/com_pos.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <!--BibTex citation -->
