@@ -25,7 +25,7 @@
 
 
   <title>Whole-Body Constrained Learning for Legged Locomotion via Hierarchical Optimization</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/logo.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -129,7 +129,7 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/running.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -148,7 +148,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Reinforcement learning (RL) has demonstrated impressive results in legged locomotion over various challenging environments. However, due to sim-to-real gap and lack of explainability, RL policies deployed in real-world still suffer from inevitable safety issues, such as joint collisions, excessive torque or foot slippery in low-friction environment. These problem limit its usage in missions with strict safety requirements, such as planetary exploration, nuclear facility inspection, and deep-sea exploration, in which failure or unreliable locomotion can result in significant risks to human life, costly equipment, or mission objectives. In this paper, we design a hierarchical optimization- based whole-body follower, which integrates both hard and soft constraints into end-to-end RL. This approach enhances the safety of RL deployment and mitigates the sim-to-real gap. Unlike conventional methods, our approach leverages the advantages of model-based control, allowing for the definition of various types of constraints during both training and deployment, which enables online parameter identification and constraint modification. Simultaneously, it preserves the robustness and capability of end-to-end RL to handle complex tasks. We conducted outdoor experiments in various environments, including soil and icy surfaces, and the experimental results demonstrate the effectiveness of our approach.
+            Reinforcement learning (RL) has demonstrated impressive results in legged locomotion over various challenging environments. However, due to sim-to-real gap and lack of explainability, RL policies deployed in real-world still suffer from inevitable safety issues, such as joint collisions, excessive torque or foot slippery in low-friction environment. These problem limit its usage in missions with strict safety requirements, such as planetary exploration, nuclear facility inspection, and deep-sea exploration, in which failure or unreliable locomotion can result in significant risks to human life, costly equipment, or mission objectives. In this paper, we design a hierarchical optimization-based whole-body follower, which integrates both hard and soft constraints into end-to-end RL. This approach enhances the safety of RL deployment and mitigates the sim-to-real gap. Unlike conventional methods, our approach leverages the advantages of model-based control, allowing for the definition of various types of constraints during both training and deployment, which enables online parameter identification and constraint modification. Simultaneously, it preserves the robustness and capability of end-to-end RL to handle complex tasks. We conducted outdoor experiments in various environments, including soil and icy surfaces, and the experimental results demonstrate the effectiveness of our approach.
           </p>
         </div>
       </div>
@@ -212,8 +212,79 @@
 </section>
 <!-- End video carousel -->
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
 
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-4">Ice rink</h2>
+          <!-- <p>
+            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+            would be impossible without nerfies since it would require going through a wall.
+          </p> -->
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/ice.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
 
+      <div class="column">
+        <h2 class="title is-4">Snow covered slope</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <!-- <p>
+              As a byproduct of our method, we can also solve the matting problem by ignoring
+              samples that fall outside of a bounding box during rendering.
+            </p> -->
+            <video id="matting-video" controls playsinline height="100%">
+              <source src="./static/videos/slope.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+
+      <div class="column">
+        <h2 class="title is-4">Soft sand</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <!-- <p>
+              As a byproduct of our method, we can also solve the matting problem by ignoring
+              samples that fall outside of a bounding box during rendering.
+            </p> -->
+            <video id="matting-video" controls playsinline height="100%">
+              <source src="./static/videos/soil.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <h2 class="title is-4">Pipeline</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <!-- <p>
+              As a byproduct of our method, we can also solve the matting problem by ignoring
+              samples that fall outside of a bounding box during rendering.
+            </p> -->
+            <video id="matting-video" controls playsinline height="100%">
+              <source src="./static/videos/pipeline.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
