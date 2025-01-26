@@ -53,21 +53,30 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Whole-Body Constrained Learning for Legged Locomotion via Hierarchical Optimization</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
+            <!-- <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Haoyu Wang</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Ruyi Zhou</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Liang Ding</a><sup>*</sup>,</span>
+                    <span class="author-block">
+                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Tie Liu</a>,</span>
+                      <span class="author-block">
+                        <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Zhelin Zhang</a>,</span>
+                        <span class="author-block">
+                          <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Peng Xu</a>,</span>
+                          <span class="author-block">
+                            <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Haibo Gao</a>,</span>
+                            <span class="author-block">
+                              <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Zongquan Deng</a></span>
+                  </div> -->
 
-                  <div class="is-size-5 publication-authors">
+                  <!-- <div class="is-size-5 publication-authors">
                     <span class="author-block">State Key Laboratory of Robotics and Systems, Harbin Institute of Technology<br>Conferance name and year</span>
+                    <span class="author-block">State Key Laboratory of Robotics and Systems, Harbin Institute of Technology</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+                  </div> -->
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
@@ -83,7 +92,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,7 +100,7 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -148,7 +157,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Reinforcement learning (RL) has demonstrated impressive results in legged locomotion over various challenging environments. However, due to sim-to-real gap and lack of explainability, RL policies deployed in real-world still suffer from inevitable safety issues, such as joint collisions, excessive torque or foot slippery in low-friction environment. These problem limit its usage in missions with strict safety requirements, such as planetary exploration, nuclear facility inspection, and deep-sea exploration, in which failure or unreliable locomotion can result in significant risks to human life, costly equipment, or mission objectives. In this paper, we design a hierarchical optimization-based whole-body follower, which integrates both hard and soft constraints into end-to-end RL. This approach enhances the safety of RL deployment and mitigates the sim-to-real gap. Unlike conventional methods, our approach leverages the advantages of model-based control, allowing for the definition of various types of constraints during both training and deployment, which enables online parameter identification and constraint modification. Simultaneously, it preserves the robustness and capability of end-to-end RL to handle complex tasks. We conducted outdoor experiments in various environments, including soil and icy surfaces, and the experimental results demonstrate the effectiveness of our approach.
+            Reinforcement learning (RL) has demonstrated impressive performance in legged locomotion over various challenging environments. However, due to the sim-to-real gap and lack of explainability, unconstrained RL policies deployed in the real world still suffer from inevitable safety issues, such as joint collisions, excessive torque, or foot slippage in low-friction environments. These problems limit its usage in missions with strict safety requirements, such as planetary exploration, nuclear facility inspection, and deep-sea exploration, in which failure or unreliable locomotion will result in serious damage to human life, costly equipment, or mission objectives. In this paper, we design a hierarchical optimization-based whole-body follower, which integrates both hard and soft constraints into end-to-end RL to make the robot move with better security guarantees. Leveraging the advantages of model-based control, our approach allows for the definition of various types of hard and soft constraints during training or deployment, which allows for policy fine-tuning and mitigates the challenges of sim-to-real transfer. Meanwhile, it preserves the robustness of end-to-end RL when dealing with locomotion in complex unstructured environments. The trained policy with introduced constraints was deployed in a hexapod robot and tested in various outdoor environments, including snow-covered slopes and stairs, demonstrating the great traversability and safety of our approach.
           </p>
         </div>
       </div>
@@ -168,7 +177,7 @@
           <h2 class="title is-3">Video</h2>
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/<need>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/watch?v=0uRP8LsiQYE&ab_channel=HaoyuWang" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
